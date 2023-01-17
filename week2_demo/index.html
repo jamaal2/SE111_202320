@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jamaal" >
+    <meta name="description" content="W2D2 Bio Assignment Demo" >
+    
+    <title>W2 | Bio</title>
+
+<!--IN-DOCUMENT STYLING-->
+<style>
+    /*in here we write in CSS*/
+
+    /*SELECTING in CSS & Javascript: select specific element(s) on a page
+
+        *by ELEMENT/TAG type        ex: body, div, p
+        *by ID attribute            ex: #wrapper, #nav, #footer, #titel
+        *by CLASS attribute         ex: coming in week 3
+    */
+
+    div { /* applies to ALL divs on the page*/
+
+        border:1px solid black;
+        padding:10px; /*addes 10px of space to all 4 sides of the element,between its content and its border*/
+        margin:5px;/*adds 5px of space to all 4 sides between other elements*/
+    
+    }
+
+
+    #nav {/* # specifies ID name, only applies to single element with that ID*/
+
+        background-color: rgb(200,200,200);
+
+    }
+
+</style>
+
+</head>
+<body style="background-color: grey">
+<div id="wrapper"><!--"wraps around" all content on page-->
+
+    <h1>Jamaal D. Jr.</h1>
+
+    <!--NAV SECTION-->
+    <div id="nav">
+        <!--ID Names can only be used 1x per page-->
+
+        <!--linking to OUTSIDE pages [not part of your website] you need FULL PATH-->
+        <a href="https://www.meca.edu/" target="_blank">Visit MECA</a>
+        <!--href hold the URL of web page you are linking to-->
+        <!--target="_blank" opens in link new tab in browser-->
+
+        <!--IN-PAGE JUMP LINKs: linking to sections within the actual page itself-->
+        <a href="#bio"></a>BIO
+        <a href="#school"></a>SCHOOLING
+        <a href="#hobbies"></a>HOBBIES>
+        <a href="#footer"></a>BOTTOM OF PAGE>
+
+    </div><!--/#nav-->
+
+    <!--BIO SECTION-->
+    <div id="bio">
+
+        <h2>About Me</h2>
+
+        <p>hello, I am jamaal and some things that I like and enjoy doing is playing video games, talking to my friends, and listening to music is my favorite out of all,
+            my favorite artist is Lil Uzi Vert and I've been listening to him for a very long time. I listen to all types of music and like all types of music but i mainly
+            listen to hip-hop, rap, and rnb. My favorite types of video games are single player games like spiderman, uncharted, hitman, and last of us.</p>
+
+        <!--IMAGE TAG-->
+        <!--remote image link example (absolute path, BOO! NOT SAFE!)-->
+        <img src="https://cdn.imgbin.com/22/2/22/imgbin-cartoon-hand-painted-paper-plane-AhJ3n8Bg0xSC6BJ52WKR9pczF.jpg" alt="a paper airplane">
+
+        <!--RELATIVE img link example-->
+        <!--relativemeans: resource (file) exsists WITHIN the ROOT FOLDER-->
+        <img src="images/stormsEnd.jpg" alt="illustration of Storm's End from Westeros" style="width:500px">
+    
+    </div><!--/#bio-->
+
+    <!--SCHOOLING SECTION-->
+    <div id="school">
+
+        <h2>Schooling</h2>
+
+        <ol>
+            <li>School 1</li>
+            <li>School 2</li>
+            <li>School 3</li>
+        </ol>
+
+        <img src="images/meca.jpg" alt="MECA Porteous building facade" style="width:500px">
+    </div><!--/#school-->
+
+    <!--HOBBIES SECTION-->
+    <div id="hobbies">
+
+
+        <h2>Hobbies</h2>
+
+        <ul>
+            <li>Listening to Music</li>
+            <li>Playing Video Games</li>
+            <li>Talking to Friends</li>
+        </ul>
+
+
+        
+    </div><!--/#hobbies-->
+
+    <!--FOOTER SECTION-->
+    <div id="footer">
+
+        <a href="#wrapper">Back to Top of Page</a>
+        <p>&copy; 2023 | J DUBLIN JR. | SE111.02 [202320]</p>
+
+        <!--VALIDATION IMAGE SCREENSHOT BELOW-->
+        <!--img src="" alt="validation screenshot" style="width:500px"-->
+
+    </div><!--/#footer-->
+</div><!--end of main div-->
+
+</body>
+</html>
